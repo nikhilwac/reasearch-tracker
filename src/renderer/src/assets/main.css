@@ -1,0 +1,133 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+
+}
+
+.sidebar {
+  width: 250px;
+  /* background-color: #d1e4e4; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #7ea9a936; /* Transparent white background */
+  backdrop-filter: blur(10px); /* Blurs the content behind */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for structure */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Spacing inside the container */
+  color: white; /* Text color to contrast with the background */
+}
+
+
+.sidebar .timer {
+  font-size: 1em;
+  display: flex;
+  color: #4a4b65;
+}
+
+.sidebar .timer span {
+  flex: 1;
+}
+
+.sidebar .nav {
+  flex-grow: 1;
+}
+
+.sidebar .nav a {
+  text-decoration: none;
+  color: #252539;
+  padding: 15px 0;
+  width: 105%;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+  transition: color 0.3s, background-color 0.4s;
+  padding-left: 15px;
+}
+
+.sidebar .nav a:hover {
+  width: 105%;
+  background: rgb(255, 255, 255); /* Transparent white background */
+}
+
+.sidebar .nav .icon {
+  margin-right: 10px;
+}
+
+.sidebar .divider {
+  border: none;
+  border-bottom: 1px solid #444;
+  margin: 20px 0;
+}
+
+.sidebar .footer a {
+  color: #a3a7f7;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.sidebar .footer a:hover {
+  color: #ffffff;
+}
+
+.sidebar .footer .icon {
+  margin-right: 10px;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #20202e;
+  color: #d3d4ff;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+
+
+.timer-display {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #252539;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 98vh;
+  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Blurs the content behind */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 15px; /* Rounded corners for smoothness */
+  padding: 20px; /* Spacing inside the container */
+
+}
+
+.timer-display .timer-label {
+  font-size: 0.9em;
+  color: #6d6df5;
+}
+
+.timer-display .timer-content {
+  display: flex;
+  align-items: center;
+}
+
+.timer-display strong {
+  font-size: 1.2em;
+  margin-right: 2rem;
+  color: #252539;
+}
